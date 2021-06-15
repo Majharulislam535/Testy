@@ -1,0 +1,14 @@
+
+.about{
+     &-data{
+         text-align: center;
+     }
+     &-description{
+         margin-bottom: $mb-3;
+     }
+     &-img{
+         width: 17.5rem;
+         border-radius: .5rem;
+         justify-self: center;
+     }
+}

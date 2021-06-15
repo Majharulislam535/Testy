@@ -1,0 +1,53 @@
+.contact{
+     &-container{
+         text-align: center;
+     }
+     &-description{
+         margin-bottom: $mb-3;
+     }
+
+}
+
+
+.footer{
+    &-container{
+      
+        grid-template-columns:repeat(auto-fit,minmax(13.75rem,1fr));
+        row-gap: 2rem;
+    }
+    &-logo{
+        font-size: $h3-font-size;
+        color: $first-color;
+        font-weight: $font-semi-bold;
+    }
+    &-description{
+        display: block;
+        font-size: $small-font-size;
+        margin: .25rem 0 $mb-3;
+    }
+    &-social{
+        font-size: 1.5rem;
+        color: $title-color;
+        margin-right: $mb-2;
+    }
+    &-title{
+        font-size: $h2-font-size;
+        color: $title-color;
+        margin-bottom: $mb-2;
+    }
+    &-link{
+        display: inline-block;
+        color: $text-color;
+        margin-bottom: $mb-1;
+        &:hover{
+            color: $first-color;
+        }
+    }
+    &-copy{
+        text-align: center;
+        font-size: $small-font-size;
+        color: $text-color-light;
+        margin-top: 3.5rem;
+    }
+
+}

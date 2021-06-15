@@ -1,0 +1,23 @@
+
+
+.home{
+     &-container{
+           height: calc(100vh - 3rem);
+          align-items: center;
+     }
+
+     &-title{
+         font-size: $biggest-font-size;
+         color: $first-color;
+         margin-bottom: $mb-1;
+     }
+     &-subtitle{
+         font-size: $h1-font-size;
+         color: $title-color;
+         margin-bottom: $mb-4;
+     }
+     &-img{
+         width: 18.75rem;
+         justify-self: center;
+     }
+}

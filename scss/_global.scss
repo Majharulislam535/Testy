@@ -1,0 +1,107 @@
+ @import 'variable';
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+ html{
+     scroll-behavior: smooth;
+ }
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    margin: $header-height 0 0 0;
+    font-size: $normal-font-size;
+    background-color:$body-color;
+     color:$text-color;
+     line-height: 1.6;
+      
+ }
+
+ body.dark-theme{
+     $title-color:#f1f3f2;
+     $text-color:#c7d1cc;
+     $body-color:#1d2521;
+     $container-color:#27302c;
+ }
+
+
+ h1,h2,h3,p,ul{
+     margin: 0;
+ }
+
+ ul{
+     padding:0;
+     list-style: none;
+ }
+
+ a{
+     text-decoration:none;
+ }
+
+ img{
+     max-width: 100%;
+     height:auto;
+ }
+
+ .section{
+     padding:4rem 0 2rem;
+     &-title{
+         text-align: center;
+         font-size: $h1-font-size;
+         color:$title-color;
+         margin-bottom: $mb-3;
+     }
+     &-subtitle{
+         text-align: center;
+         display:block;
+         color: $first-color;
+         font-weight: $font-medium;
+         margin-bottom: $mb-1;
+     }
+ }
+ 
+
+ .bd-container{
+     max-width: 60rem;
+     width: calc(100% - 2rem);
+     margin-left:$mb-2 ;
+     margin-right: $mb-2;
+ }
+ 
+ .bd-grid{
+     display:grid;
+     gap: 1.5rem;
+ }
+
+ .l-header{
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left:0;
+     z-index: $z-fixed;
+     background-color:$body-color;
+     
+ }
+
+ .button{
+     display: inline-block;
+     background-color:$first-color;
+     color: #ffffff;
+     padding: .75rem 1rem;
+     border-radius: .5rem;
+     transition: .3s;
+     &:hover{
+         background-color:$first-color-alt;
+     }
+ }
+
+ .change-theme{
+     position: absolute;
+     right: 1rem;
+     top: 1.8rem;
+     color: $text-color;
+     font-size: 1rem;
+     cursor: pointer;
+ }

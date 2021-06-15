@@ -1,0 +1,115 @@
+
+ @media only screen and(min-width:48rem) {
+    $biggest-font-size:4rem;
+    $h1-font-size:2.25rem;
+    $h2-font-size:1.5rem;
+    $h3-font-size:1.25rem;
+    $normal-font-size:1rem;
+    $small-font-size:.875rem;
+    $smaller-font-size:.873rem;
+  
+ }
+
+ @media screen and(max-width:64rem){
+    .nav-menu{
+       position: fixed;
+       top:-100%;
+       left: 0;
+       width: 100%;
+       padding: 1.5rem 0 1rem;
+       text-align: center;
+       background-color:$body-color;
+       transition:.4s;
+       box-shadow: 0 4px 4px rgba(0,0,0,.1);
+       border-radius: 0 0 1rem 1rem;
+       z-index: $z-fixed;
+
+    }
+ }
+
+
+
+ @media screen and(min-width:36rem){
+    .home-container,
+    .about-container,
+    .app-container{
+       grid-template-columns:1fr 1fr;
+       align-items: center;
+    }
+    .about-data,.about-initial,.app-data,.app-initial,.contact-container,.contact-initial{
+       text-align: initial !important;
+    }
+    .about-img,.app-img{
+       width: 23.75rem;
+       order: -1;
+    }
+    .contact-container{
+       grid-template-columns:1.75fr 1fr;
+       align-items: center;
+    }
+    .contact-button{
+       justify-self: center;
+    }
+ }
+
+ @media screen and(min-width:48rem){
+       body{
+          margin: 0;
+       }
+       .section{
+          padding-top: 8rem;
+       }
+       .nav{
+          height: calc(3rem + 1.5rem) !important;
+       }
+       .nav-list{
+          display: flex;
+       }
+       .nav-items{
+          margin-left: $mb-5;
+          margin-bottom: 0 !important;
+       }
+       .nav-toggle{
+          display: none;
+       }
+
+       .home-container{
+          height: 100vh;
+          justify-items: center;
+       }
+       .service-container,
+        .menu-container{
+          margin-top: $mb-6;
+       }
+
+       .menu-container{
+          grid-template-columns:  13.125rem 13.125rem 13.125rem !important;
+          column-gap: 4rem;
+       }
+
+       .menu-content{
+          padding: 1.5rem;
+       }
+       .menu-img{
+          width: 8.125rem;
+       }
+       .app-store{
+          margin: 0 $mb-1 0 0;
+       }
+      
+ }
+
+
+ @media screen and(min-width:60rem){
+    .bd-container{
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .home-img{
+       width: 31.25rem;
+    }
+    .about-container,
+    .app-container{
+       column-gap: 7rem;
+    }
+ }
